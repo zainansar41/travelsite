@@ -1,0 +1,86 @@
+.hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.hero_desc {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_heading {
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    text-align: center;
+}
+
+.hero_tag {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 15px 0;
+}
+
+.BTN {
+    background: #fff;
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    width: 120px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transform: skew(-21deg);
+}
+
+span {
+    display: inline-block;
+    transform: skew(21deg);
+}
+
+.BTN::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    background: rgb(20, 20, 20);
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+.BTN:hover {
+    color: #fff;
+}
+
+.BTN:hover::before {
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+.tag_no{
+    display: none;
+}
+.BTN_no{
+    display: none;
+}
